@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+body {
+  font-family: "Tahoma" !important;
+  -webkit-print-color-adjust: exact !important;
+}
+.main-container-wrap {
+  flex-wrap: wrap;
+}
+.g-info-place {
+  border-right: 0.5px solid var(--primary-color);
+  padding: 8px;
+  border-radius: 4px;
+}
+.main-header {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.main-CV-place {
+  min-width: 794px !important;
+  min-height: 1123px !important;
+  background-color: #fff;
+  box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.25);
+  line-height: 1.6;
+}
+.avatar-place {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #0081a7;
+}
+.avatar-img {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+.skil-input {
+  font-size: 12px;
+  width: 10%;
+  margin-left: 10%;
+  outline: none;
+  border: none;
+}
+.skill-percentage {
+  margin-left: -3%;
+}
+.main-header-item i {
+  display: block;
+  font-size: 20px;
+  margin-top: 8px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.main-header-item-des {
+  font-size: 14px;
+}
+.main-header-item:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+#upload-photo {
+  opacity: 0;
+  position: absolute;
+  width: 150px;
+  margin-top: -150px;
+  height: 150px;
+}
+.progress-bar {
+  background-color: var(--primary-color) !important;
+}
+.more-op {
+  margin-top: 12px;
+}
+@media print {
+  .main-header {
+    display: none;
+  }
+  .main-CV-place {
+    size: A4;
+    margin: 0;
+    page-break-after: always;
+    page-break-inside: avoid;
+    box-shadow: 0 0 0 0 !important;
+  }
+  div {
+    break-inside: avoid;
+  }
+}

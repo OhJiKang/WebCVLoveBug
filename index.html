@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web CV Love Bug</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <link rel="stylesheet" href="./Assets/css/grid.css" />
+    <link rel="stylesheet" href="./Assets/css/base.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"
+    style="font-family: 'Times New Roman';" />
+    <link
+      href="http://fonts.cdnfonts.com/css/bignoodletitling"
+      rel="stylesheet"
+    />
+    <link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
+
+  </head>
+  <body>
+    <div class="main-header">
+      <ul class="main-header-list">
+        <li class="main-header-item choose-place">
+          <i class="fas fa-copy"></i>
+          <p class="main-header-item-des">Điều chỉnh layout</p>
+          <div class="layout-choose ">
+            <ul class="choose-list">
+              <li class="choose-item">
+                <input type="checkbox" class="checkbox-choose" checked id="0">
+                Các kĩ năng
+              </li>
+              <li class="choose-item">
+                <input type="checkbox" class="checkbox-choose" checked id="1">
+                Sở Thích
+              </li>
+              <li class="choose-item">
+                <input type="checkbox" class="checkbox-choose" checked id="2">
+                Kinh nghiệm làm việc
+              </li>
+              <li class="choose-item">
+                <input type="checkbox" class="checkbox-choose" checked id="3">
+                Học vấn
+              </li>
+              <li class="choose-item">
+                <input type="checkbox" class="checkbox-choose" checked id="4">
+                Kinh nghiệm thực tập
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-header-item delete-all-btn">
+          <i class="fas fa-eraser"></i>
+          <p class="main-header-item-des">Xóa hết nội dung</p>
+        </li>
+        <li class="main-header-item print-btn">
+          <i class="fas fa-print"></i>
+          <p class="main-header-item-des">In ra</p>
+        </li>
+        <li class="main-header-item download-pdf-btn">
+          <i class="fas fa-file-pdf"></i>
+          <p class="main-header-item-des">Down file PDF</p>
+        </li>
+        <li class="main-header-item">
+          <label for="upload-photo" class="upload-btn">
+          <i class="fas fa-user-circle"></i>
+          <p class="main-header-item-des">Up hình</p>
+          </label>
+          <input type="file" name="photo" id="upload-photo" accept=".jpg, .png"/>
+        </li>
+      </ul>
+    </div>
+    <div class="main-container grid">
+      <div class="main-container-wrap">
+        <div class="main-instruction-place l-3">
+          <p class="ge-info">
+            Thông tin liên hệ:
+            </br>
+            Số điện thoại và địa chỉ thư điện tử là các thông tin bắt buộc bạn cần nhập vào phần nội dung này. Phần này giúp nhà tuyển dụng dễ dàng liên lạc với bạn hơn. 
+            </br>
+          </br>
+            ✉ - E-mail: Bạn nên sử dụng email nào thường hay kiểm tra thư nhất
+        </br>
+            VD: lovebug@gmail.com
+            </br>
+          </br>
+            📞 - Số điện thoại: Bạn nhập số điện thoại của bạn đang sử dụng.
+            </br>
+            VD: 0123456789
+            </br>
+          </br>
+            🏠 - Địa Chỉ: Bạn điền địa chỉ bạn đang sinh sống, làm việc.
+            </br>
+            VD: Tân phong, Quận 7, tp HCM.
+            </br>
+          </br>
+            🌐 - Mạng xã hội:
+            Bạn có thể thêm đường dẫn đến web cá nhân hoặc tài khoản mạng xã hội như Facebook, Instagram,....
+            </br>
+          </br>
+          </p>
+          <p class="skill-info">
+            + Nêu ra các kỹ năng giúp ích cho vị trí ứng tuyển (tùy thuộc vào vị trí ứng tuyển và những kỹ năng bạn có để đưa vào CV những kỹ năng phù hợp)
+          </br>
+        </br>
+            + Phần này nhà tuyển dụng sẽ nắm được những gì bạn có thể làm. Các kỹ năng khác nhau như “Giải quyết vấn đề” hoặc “Tin học văn phòng” nên được thêm vào khả năng của bạn.
+          </br>
+        </br>
+            + Nên chọn lựa kỹ năng phù hợp với vị trí bạn đang muốn ứng tuyển, và chọn các kỹ năng quan trọng lên đầu danh sách.
+          </br>
+        </br>
+          + Trong một vài trường hợp cụ thể, hãy suy nghĩ về cách viết làm cho bạn nổi bật hơn. 
+        </p>
+        <p class="interest-info">
+        Đối với sở thích, bạn nên chọn những sở thích liên quan đến việc phục vụ tốt công việc của bạn hoặc là phù hợp với văn hóa của công ty mà bạn muốn ứng tuyển.
+        </br>
+        </br>
+        !!!!! Chú ý: Viết từ 1-2 sở thích, ngắn gọn, rõ ràng.
+        </p>
+        <p class="work-exp-info">
+        Liệt kê những kinh nghiệm làm việc của bản thân và thêm các vị trí công việc khác nhau mà bạn đã được đảm nhận và mô tả ngắn gọn về nó. Đừng quên làm nổi bật những thành tựu lớn nhất của bản thân. 
+        </br>
+        </br>
+        Viết vị trí công việc hiện tại (hoặc gần đây nhất) của bạn lên đầu, sau đó liệt kê tất cả và cùng với các vị trí trước đó bạn đã đảm nhiệm.
+        </br>
+        Chú ý: Liệt kê các ý một cách rõ ràng và rành mạch. Tránh viết quá dài và nhiều chữ.
+      </br>
+      </br>
+      Khi mô tả vị trí công việc đã đảm nhận, bạn nên liệt kê thêm các thành tích đã đạt được nhằm tạo ấn tượng đối với nhà tuyển dụng. Và đặc biệt, bạn nên thêm các số liệu cụ thể đi kèm cùng với thành tích đã đạt được
+        </p>
+        <p class="edu-info">
+          - Bạn nên đề cập Ngành học, trường học.
+        </br>
+      </br>
+        - Đồng thời một số môn chuyên ngành có tính ứng dụng cao ở công việc mà bạn đạt kết quả tốt.
+        </br>
+      </br>
+        -  Hơn hết quan trọng hơn,đề án, nghiên cứu khoa học nếu có và có liên quan đến vị trí ứng tuyển
+        </p>
+        <p class="intern-info">
+          Đưa ra những thứ bạn đã học hỏi được sau khi thực tập càng cụ thể càng tốt
+        </br>
+          Ví dụ: khả năng làm việc nhóm, sự năng động, sáng tạo và linh hoạt, sự kiên trì, đóng góp cho cộng đồng…
+        </br>
+      </br>
+          Không nên đưa quá chi tiết những phần công việc nhỏ nhặt (ví dụ như in giấy tờ, đến công ty sớm dọn dẹp…).
+        </p>
+        </div>
+        <div class="main-CV-place l-6">
+          <div class="main-CV-item-wrap">
+            <div class="g-info-place l-4">
+              <div class="avatar-place">
+                <img
+                  src="https://installmentsvfacr.com/huong-dan-su-dung-chuot-bay-km800/imager_4466.jpg"
+                  alt=" no-avatar"
+                  class="avatar-img"
+                />
+              </div>
+              <div class="gene-info">
+                <div class="info-item">
+                  <div class="info-icon-list">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="info-editable ge-0" id="0" contenteditable></div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon-list">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="info-editable ge-1" id="1"contenteditable></div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon-list">
+                    <i class="fas fa-home"></i>
+                  </div>
+                  <div class="info-editable ge-2" id="2"contenteditable></div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon-list">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div class="info-editable ge-3" id="3"contenteditable></div>
+                </div>
+              </div>
+              <div class="skill-place">
+                <p class="main-heading">Các kĩ năng
+                  <span class="change-position-place" id="0">
+                    <span class="go-up-place">
+                      <i class="fas fa-arrow-circle-up go-up-btn"></i>
+                    </span>
+                    <span class="go-down-place">
+                      <i class="fas fa-arrow-circle-down go-down-btn"></i>
+                    </span>
+                  </span>
+                </p> 
+                <div class="skill-place-list">
+                  <div class="skill-place-name skill-place-item active " id="js-s-0">
+                    <p class="skill-place-name">
+                      <span class="skill-place-name-item spn-0" id="0" contenteditable>Skill-1</span>
+                      <span class="skill-value">
+                        <input type="text" class="skil-input s-0"  id="0" placeholder="10">
+                      </span>
+                    <span class="skill-percentage">%</span>
+                    </p>
+                    </p>
+                    <div
+                      class="
+                        w3-border w3-round w3-tiny
+                        skill-process-bar-outline
+                      "
+                    >
+                      <div
+                        class="w3-red w3-round w3-tiny progress-bar"
+                        style="height: 12px; width: 10%"
+                        id="js-s-1"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="add-remove-btn-skill">
+                  <span class="add-btn-skill">
+                    <i class="fas fa-plus-circle"></i>
+                  </span>
+                  <span class="remove-btn-skill">
+                    <i class="fas fa-minus-circle"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="interest-place">
+                <p class="main-heading">Sở Thích
+                  <span class="change-position-place" id="1">
+                    <span class="go-up-place">
+                      <i class="fas fa-arrow-circle-up go-up-btn"></i>
+                    </span>
+                    <span class="go-down-place">
+                      <i class="fas fa-arrow-circle-down go-down-btn"></i>
+                    </span>
+                  </span>
+                </p>
+                <div class="interest-box">
+                  <p class="interest-content" contenteditable></p>
+                </div>
+              </div>
+            </div>
+            <div class="m-info-place l-8">
+              <div class="main-ge-info">
+                <p class="main-ge-name" contenteditable>Tên của bạn</p>
+                <p class="main-ge-po" contenteditable>Vị trí chính của bạn</p>
+                <div class="main-ge-underline"></div>
+              </div>
+              <div class="main-experiment-place">
+                <p class="main-heading">Kinh nghiệm làm việc
+                  <span class="change-position-place">
+                    <span class="go-up-place">
+                      <i class="fas fa-arrow-circle-up go-up-btn"></i>
+                    </span>
+                    <span class="go-down-place">
+                      <i class="fas fa-arrow-circle-down go-down-btn"></i>
+                    </span>
+                  </span>
+                </p>
+                <div class="exp-list">
+                  <div class="exp-item">
+                    <div class="exp-heading">
+                      <i class="fas fa-circle round-icon"> </i>
+                      <span class="exp-item-heading ex-h-0" id="0" contenteditable>
+                        Nơi làm việc
+                      </span>
+                    </div>
+                    <div class="exp-des">
+                      <span class="exp-des-text ex-t-0"  id="0"contenteditable
+                        >Mô tả khái quát</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <span class="add-remove-btn-exp">
+                  <span class="add-btn-exp">
+                    <i class="fas fa-plus-circle"></i>
+                  </span>
+                  <span class="remove-btn-exp">
+                    <i class="fas fa-minus-circle"></i>
+                  </span>
+                </span>
+              </div>
+              <div class="main-education-place">
+                <p class="main-heading">Học Vấn
+                  <span class="change-position-place">
+                    <span class="go-up-place">
+                      <i class="fas fa-arrow-circle-up go-up-btn"></i>
+                    </span>
+                    <span class="go-down-place">
+                      <i class="fas fa-arrow-circle-down go-down-btn"></i>
+                    </span>
+                  </span>
+                </p>
+                <div class="edu-list">
+                  <div class="edu-item">
+                    <div class="edu-heading">
+                      <i class="fas fa-circle round-icon"> </i>
+                      <span class="edu-item-heading edh-0" id="0" contenteditable>
+                        Nơi học tập
+                      </span>
+                    </div>
+                    <div class="edu-des">
+                      <p class="edu-des-text edt-0" id="0" contenteditable>Mô tả khái quát</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="add-remove-btn-edu">
+                  <span class="add-btn-edu">
+                    <i class="fas fa-plus-circle"></i>
+                  </span>
+                  <span class="remove-btn-edu">
+                    <i class="fas fa-minus-circle"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="main-intern-place">
+                <p class="main-heading">Kinh nghiệm thực tập
+                  <span class="change-position-place">
+                    <span class="go-up-place">
+                      <i class="fas fa-arrow-circle-up go-up-btn"></i>
+                    </span>
+                    <span class="go-down-place">
+                      <i class="fas fa-arrow-circle-down go-down-btn"></i>
+                    </span>
+                  </span>
+                </p>
+                <div class="intern-des-list">
+                  <div class="intern-des-item">
+                    <i class="fas fa-circle round-icon"> </i>
+                    <span class="intern-des" id="0" contenteditable>
+                      Giới thiệu khái quát về nơi thực tập
+                    </span>
+                  </div>
+                </div>
+                <div class="add-remove-btn-intern">
+                  <span class="add-btn-intern">
+                    <i class="fas fa-plus-circle"></i>
+                  </span>
+                  <span class="remove-btn-intern">
+                    <i class="fas fa-minus-circle"></i>
+                  </span>
+                </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="fake-form l-3">
+        </div>
+        </div>          
+          </div>          
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rasterizehtml/1.3.0/rasterizeHTML.allinone.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js" integrity="sha512-tVYBzEItJit9HXaWTPo8vveXlkK62LbA+wez9IgzjTmFNLMBO1BEYladBw2wnM3YURZSMUyhayPCoLtjGh84NQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./Assets/webCV.js"></script>
+  </body>
+</html>
