@@ -590,7 +590,7 @@ window.onload = function () {
   function changeplacedown() {
     var downbtnlist = document.querySelectorAll(".go-down-btn");
     downbtnlist.forEach(function (i) {
-      i.onclick = function () {
+      i.onclick = function (e) {
         var nodeori1 = i.parentNode.parentNode.parentNode.parentNode;
         function changeplaceitemdown() {
           var nodeori2 =
@@ -598,8 +598,9 @@ window.onload = function () {
           nodeori1.remove();
           nodeori2.after(nodeori1);
         }
-        if (i.parentNode.parentNode.parentNode.parentNode.nextSibling) {
-          console.log(1);
+        if (
+          i.parentNode.parentNode.parentNode.parentNode.nextSibling.nextSibling
+        ) {
           changeplaceitemdown();
           changeplaceitemdown();
           downbtnlist = document.querySelectorAll(".go-down-btn");
