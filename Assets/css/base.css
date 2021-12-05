@@ -41,6 +41,7 @@
 }
 .info-editable {
   height: 18px;
+  padding-bottom: 16px;
   border-bottom: 0.5px solid var(--primary-color);
   color: var(--text-color);
   font-size: 14px;

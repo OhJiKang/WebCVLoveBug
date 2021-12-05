@@ -42,6 +42,9 @@ window.onload = function () {
         `Giới thiệu khái quát về nơi thực tập`
       );
     }
+    for (i = 0; i < gein.length; i++) {
+      window.localStorage.setItem(`ge${i}`, `Thông tin cá nhân`);
+    }
   }
   function firstload() {
     if (window.localStorage.length == 0) {
