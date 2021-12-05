@@ -209,13 +209,15 @@
   height: 50px;
 }
 .add-remove-btn-edu {
-  height: 8px;
+  height: 32px;
   color: var(--primary-color);
-  display: inline-block;
-  margin-left: 85%;
+  display: block;
+  padding-left: 85%;
+  width: 100%;
+  margin-right: 0;
 }
 .add-remove-btn-edu i {
-  display: inline-block;
+  display: none;
   height: 8px;
   width: 8px;
   margin-right: 12px;
@@ -273,15 +275,9 @@
   width: 8px;
   margin-right: 12px;
 }
-.main-header {
-  width: 40%;
-  margin-left: 30%;
-  height: 50px;
-  border-radius: 12px;
-  background-color: var(--primary-color);
-}
 .main-header-list {
   display: flex;
+  flex-direction: column;
   list-style: none;
   justify-content: space-around;
   color: white;
@@ -297,13 +293,22 @@
   height: auto;
   background-color: var(--primary-color);
   position: absolute;
-  top: 51px;
-  left: -20px;
+  top: 0px;
+  left: 108px;
   border-radius: 4px;
   display: none;
 }
 .choose-place {
   position: relative;
+}
+.choose-place:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  right: -4px;
+  z-index: -1;
 }
 .choose-item {
   font-size: 13px;
