@@ -67,6 +67,7 @@ body {
 .main-header-item-des {
   font-size: 14px;
   padding: 4px;
+  text-align: center;
 }
 .main-header-item:hover {
   cursor: pointer;
