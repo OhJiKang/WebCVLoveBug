@@ -276,7 +276,9 @@
   margin-right: 12px;
 }
 .main-header-list {
+  align-items: center;
   display: flex;
+  letter-spacing: 1px;
   flex-direction: column;
   list-style: none;
   justify-content: space-around;
